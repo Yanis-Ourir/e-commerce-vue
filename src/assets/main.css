@@ -3,9 +3,13 @@
 
 #app {
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
+
+nav {
+  margin: 2rem;
+}
+
 
 
 a,

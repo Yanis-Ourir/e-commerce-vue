@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/Header.vue'
 import Navbar from './components/Navbar.vue'
 import ReviewList from './components/ReviewList.vue'
+import Partners from './components/Partners.vue'
 
 </script>
 
@@ -17,6 +18,10 @@ import ReviewList from './components/ReviewList.vue'
     <div class="pt-12">
 
       <ReviewList/>
+    </div>
+
+    <div>
+      <Partners />
     </div>
     
   <RouterView />
