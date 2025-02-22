@@ -32,17 +32,20 @@ const products = [
 </script>
 
 <template>
-    <p class="green border-l-emerald-400 border-l-2 font-bold uppercase">course summary</p>
-    <h5 class="text-6xl font-bold leading-16 py-6">
-        Navigatin The Marketing Landscape: Your Roadmap to success
-    </h5>
+    <div class="p-4 mx-27">
 
-    <div class="flex justify-center gap-6 py-6">
-
-        <ProductSquare
-        v-for="product in products"
-        :key="product.id"
-        :product="product"
-        />
+        <p class="green border-l-emerald-400 border-l-2 font-bold uppercase">course summary</p>
+        <h5 class="text-5xl font-bold leading-16 py-6">
+            Navigatin The Marketing Landscape: <br>Your Roadmap to success
+        </h5>
+        
+        <div class="flex justify-center gap-6 py-6">
+            
+            <ProductSquare
+            v-for="(product, index) in products"
+            :key="product.id"
+            :product="product"
+            />
+        </div>
     </div>
 </template>

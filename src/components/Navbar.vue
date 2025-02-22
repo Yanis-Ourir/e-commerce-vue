@@ -21,7 +21,6 @@
 
         <div class="">
             <button class="button px-6 py-2 my-4">Login</button>
-            <button class="button px-6 py-2 my-4">Sign Up</button>
         </div>
         
     </nav>

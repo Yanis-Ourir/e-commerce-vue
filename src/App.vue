@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.vue'
 import ReviewList from './components/ReviewList.vue'
 import Partners from './components/Partners.vue'
 import Accordeon from './components/Accordeon.vue'
+import Footer from './components/Footer.vue'
 
 </script>
 
@@ -25,8 +26,12 @@ import Accordeon from './components/Accordeon.vue'
       <Partners />
     </section>
 
-    <section>
+    <section class="pt-12 m-12">
       <Accordeon />
+    </section>
+
+    <section>
+      <Footer />
     </section>
     
   <RouterView />

@@ -32,14 +32,14 @@ a,
 }
 
 .product-square {
-  background-color: hsla(160, 100%, 69%, 0.192);
+  background-color: hsla(160, 91%, 30%, 0.192);
   border-radius: 10px;
   height: 600px;
  
 }
 
 .product-square:hover {
-  background-color: hsl(160, 86%, 28%);
+  background-color: #084c3c;
   width: fit-content;
 }
 
