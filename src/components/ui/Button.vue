@@ -2,15 +2,13 @@
 defineProps<{
     text: string
     class: string
-    disabled: boolean
-    onClick: () => void
+    onClick: () => void | null
 }>()
 </script>
 
 <template>
     <button
         :class="class"
-        :disabled="disabled"
         @click="onClick"
     >
         {{ text }}

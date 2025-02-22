@@ -1,10 +1,9 @@
 <script setup lang="ts">
     defineProps<{
         text: string
-        class: string
         name: string
         city: string
-        rating: number
+        rating: string
     }>()
 </script>
 

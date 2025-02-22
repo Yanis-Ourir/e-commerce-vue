@@ -4,6 +4,7 @@ import Header from './components/Header.vue'
 import Navbar from './components/Navbar.vue'
 import ReviewList from './components/ReviewList.vue'
 import Partners from './components/Partners.vue'
+import Accordeon from './components/Accordeon.vue'
 
 </script>
 
@@ -11,18 +12,22 @@ import Partners from './components/Partners.vue'
 
    <Navbar />
 
-    <div class="wrapper py-12">
+    <section class="wrapper py-12">
       <Header msg="The marketing toolkit" />
-    </div>
+    </section>
 
-    <div class="pt-12">
+    <section class="pt-12">
 
       <ReviewList/>
-    </div>
+    </section>
 
-    <div>
+    <section>
       <Partners />
-    </div>
+    </section>
+
+    <section>
+      <Accordeon />
+    </section>
     
   <RouterView />
 </template>
