@@ -7,7 +7,7 @@
         </a>
         
         
-        <ul class="flex items-center">
+        <ul class="flex items-center gap-6">
             <li>
                 <a href="/home">Home</a>
             </li>

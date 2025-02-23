@@ -3,14 +3,14 @@
 </script>
 
 <template>
-    <footer class="bg-[#084c3c] text-white flex justify-around items-center p-12">
+    <footer class="bg-[#084c3c] text-white md:flex justify-around items-center p-12 text-center md:text-start">
         <div>
-            <p class="w-1/2">
+            <p class="md:w-1/2">
                 We make onboarding easy for you. On day one, you will have access to all the tools you need to succeed.
                 And if you need help, our support team is available 24/7.
             </p>
 
-            <div class="flex gap-4 py-6 items-center">
+            <div class="flex gap-4 py-6 items-center justify-center md:justify-start">
                 <p>Follow us on:</p>
                  <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
                     <span class="sr-only">GitHub</span>
@@ -39,44 +39,47 @@
             </div>
         </div>
 
-        <div class="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                    <ul class="mt-4">
-                    <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Marketing </a>
-                    </li>
-                    <li class="mt-4">
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Analytics </a>
-                    </li>
-                    <li class="mt-4">
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Commerce </a>
-                    </li>
-                    <li class="mt-4">
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Insights </a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div class="flex justify-around items-center">
 
-         <div class="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div class="md:grid md:grid-cols-1 md:gap-8">
-                <div>
-                    <ul class="mt-4">
-                    <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Marketing </a>
-                    </li>
-                    <li class="mt-4">
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Analytics </a>
-                    </li>
-                    <li class="mt-4">
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Commerce </a>
-                    </li>
-                    <li class="mt-4">
-                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Insights </a>
-                    </li>
-                    </ul>
+                <div class="md:mt-12 md:grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                                <ul class="mt-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Marketing </a>
+                                    </li>
+                                    <li class="mt-4">
+                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Analytics </a>
+                                    </li>
+                                    <li class="mt-4">
+                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Commerce </a>
+                                    </li>
+                                    <li class="mt-4">
+                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Insights </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+            <div class="md:mt-12 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
+                <div class="md:grid md:grid-cols-1 md:gap-8">
+                    <div>
+                        <ul class="mt-4">
+                            <li>
+                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Marketing </a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Analytics </a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Commerce </a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Insights </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
