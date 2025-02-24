@@ -9,7 +9,7 @@
         
         <ul class="flex items-center gap-6">
             <li>
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
             </li>
             <li>
                 <a href="/products">Products</a>
