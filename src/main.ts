@@ -18,6 +18,7 @@ export type Product = {
     description: string
     image: string
     class: string
+    slug: string
 }
 
 export type Products = Product[]
@@ -30,6 +31,7 @@ const products: Products = [
         description: 'One Piece - 25 Affiches Wanted Primes Mugiwara 100,5 x 70,5 cm',
         image: './onepiece-affiche.webp',
         class: 'product1',
+        slug: 'product-1'
     },
     {
         id: 2,
@@ -38,6 +40,7 @@ const products: Products = [
         description: 'Booster One piece, 12 cartes à collectionner, 1 carte rare garantie',
         image: './one-piece-booster.png',
         class: 'product2',
+        slug: 'product-2'
     },
     {
         id: 3,
@@ -46,14 +49,16 @@ const products: Products = [
         description: 'One Piece - Figurine Monkey D. Luffy Gear Fourth - King of Artist - 30 cm',
         image: './one-piece-figurine.webp',
         class: 'product3',
+        slug: 'product-3'
     },
     {
         id: 4,
-        name: 'Product 3',
+        name: 'Product 4',
         price: 300,
         description: 'One Piece - Figurine Monkey D. Luffy Gear Fourth - King of Artist - 30 cm',
         image: './one-piece-figurine.webp',
-        class: 'product3',
+        class: 'product4',
+        slug: 'product-4'
     },
 ]
 

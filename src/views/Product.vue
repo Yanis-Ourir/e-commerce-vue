@@ -1,7 +1,58 @@
+<script setup lang="ts">
+import type { Products } from '@/main';
+import { inject } from 'vue';
+
+const props = defineProps<{
+  slug: string;
+}>();
+
+const products: Products = inject('products') || [];
+const reviews = [
+  {
+          id: 1,
+          user: "Alice",
+          comment: "Super produit, très satisfait !",
+          rating: 5
+        },
+        {
+          id: 2,
+          user: "Bob",
+          comment: "Bon rapport qualité/prix.",
+          rating: 4
+        },
+        {
+          id: 3,
+          user: "Charlie",
+          comment: "Livraison rapide, je recommande !",
+          rating: 5
+        }
+      ]
+
+const product = products.find((product) => product.slug === props.slug) || {
+  id: 0,
+  name: 'Produit non trouvé',
+  price: 0,
+  description: 'Désolé, nous n\'avons pas trouvé le produit que vous cherchez.',
+  image: 'https://via.placeholder.com/300',
+  slug: 'not-found'
+}
+</script>
+
+
 <template>
-  <div class="p-4 min-h-screen flex flex-col items-center">
+   <div v-if="product.id === 0" class="p-4 min-h-screen flex flex-col items-center justify-center text-center">
+    <h1 class="text-2xl font-bold text-red-600">Produit non trouvé</h1>
+    <p class="text-gray-600 mt-2 max-w-md">
+      Désolé, nous n'avons pas trouvé le produit que vous cherchez. 
+      Retournez à la boutique pour découvrir d'autres articles.
+    </p>
+    <router-link to="/products" class="mt-4 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition">
+      Retour à la boutique
+    </router-link>
+  </div>
+  <div v-else class="p-4 min-h-screen flex flex-col items-center">
     <div class="bg-white rounded-2xl shadow-lg p-6 max-w-2xl w-full">
-      <img :src="product.image" :alt="product.name" class="w-full h-60 object-cover rounded-xl" />
+      <img :src="'../public/' + product.image" :alt="product.name" class="w-full h-60 object-cover rounded-xl" />
       <h1 class="text-2xl font-bold text-green-800 mt-4">{{ product.name }}</h1>
       <p class="text-gray-600 text-sm mt-2">{{ product.description }}</p>
       <span class="text-green-700 font-semibold text-xl mt-4 block">{{ product.price }}€</span>
@@ -21,41 +72,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      product: {
-        id: 1,
-        name: "Produit 1",
-        description: "Description détaillée du produit 1 avec ses caractéristiques et avantages.",
-        price: 29.99,
-        image: "https://via.placeholder.com/300"
-      },
-      reviews: [
-        {
-          id: 1,
-          user: "Alice",
-          comment: "Super produit, très satisfait !",
-          rating: 5
-        },
-        {
-          id: 2,
-          user: "Bob",
-          comment: "Bon rapport qualité/prix.",
-          rating: 4
-        },
-        {
-          id: 3,
-          user: "Charlie",
-          comment: "Livraison rapide, je recommande !",
-          rating: 5
-        }
-      ]
-    };
-  }
-};
-</script>
+
 
 <style scoped>
 .bg-green-600 {

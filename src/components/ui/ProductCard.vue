@@ -7,6 +7,7 @@
             description: string;
             image: string;
             class: string;
+            slug: string;
         };
     }>()
 
@@ -16,7 +17,7 @@
 </script>
 
 <template>
-  <a class="p-4" :href="product.name">
+<a class="p-4" :href="'/product/' + product.slug">
         <div>
         <div :key="product.id" class="bg-white rounded-2xl shadow-lg p-4">
             <img :src="product.image" :alt="product.name" class="w-full h-40 object-cover rounded-xl" />
