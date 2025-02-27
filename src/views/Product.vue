@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Products } from '@/main';
+import { useCartStore } from '@/stores/cart';
 import { inject } from 'vue';
 
 const props = defineProps<{
@@ -34,8 +35,12 @@ const product = products.find((product) => product.slug === props.slug) || {
   price: 0,
   description: 'Désolé, nous n\'avons pas trouvé le produit que vous cherchez.',
   image: 'https://via.placeholder.com/300',
-  slug: 'not-found'
+  slug: 'not-found',
+  class: ''
 }
+
+const store = useCartStore();
+
 </script>
 
 
@@ -56,7 +61,7 @@ const product = products.find((product) => product.slug === props.slug) || {
       <h1 class="text-2xl font-bold text-green-800 mt-4">{{ product.name }}</h1>
       <p class="text-gray-600 text-sm mt-2">{{ product.description }}</p>
       <span class="text-green-700 font-semibold text-xl mt-4 block">{{ product.price }}€</span>
-      <button class="bg-green-500 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition mt-4 w-full">
+      <button @click="store.addProduct(product)" class="bg-green-500 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition mt-4 w-full">
         Ajouter au panier
       </button>
       

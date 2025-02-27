@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import Cart from './ui/Cart.vue';
+
+</script>
+
 <template>
     <nav class="flex justify-between items-center py-4 px-6 shadow-md rounded-2xl">
 
@@ -19,9 +24,9 @@
             </li>
         </ul>
 
-        <div class="">
-            <button class="button px-6 py-2 my-4">Login</button>
-        </div>
+        <a href="/cart" class="">
+            <Cart />
+        </a>
         
     </nav>
 </template>
