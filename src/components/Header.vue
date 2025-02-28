@@ -30,7 +30,7 @@ const method = () => {
      
       <Button text="Découvrir la boutique" class="button px-6 py-2" :onClick="method"/>
     </div>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="300" height="300" />
+    <img alt="Vue logo" class="logo" src="@/assets/site-ecologique-eco-conception-web.jpg" width="500" height="500" />
   </div>
 
 

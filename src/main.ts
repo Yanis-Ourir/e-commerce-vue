@@ -38,7 +38,7 @@ const products: Products = [
             name: 'Sac à vrac en coton bio',
             price: 10,
             description: 'Idéal pour les courses zéro déchet.',
-            image: './sac-vrac.jpg',
+            image: './sac-en-vrac.jpg',
             slug: 'sac-vrac',
             class: 'product'
         },
@@ -47,7 +47,7 @@ const products: Products = [
             name: 'Brosse à dents en bambou',
             price: 5,
             description: 'Alternative écologique aux brosses en plastique.',
-            image: './brosse-bambou.jpg',
+            image: './brosse-a-dent-bambou.jpg',
             slug: 'brosse-bambou',
             class: 'product'
         },
@@ -65,7 +65,7 @@ const products: Products = [
             name: 'Lampe solaire portable',
             price: 35,
             description: 'Rechargeable et idéale pour le camping ou la maison.',
-            image: './lampe-solaire.jpg',
+            image: './lampe-solaire.webp',
             slug: 'lampe-solaire',
             class: 'product'
         }

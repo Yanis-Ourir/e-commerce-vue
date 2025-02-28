@@ -13,13 +13,13 @@ import Cart from './ui/Cart.vue';
         
         <ul class="flex items-center gap-6">
             <li>
-                <a href="/">Home</a>
+                <a href="/">Accueil</a>
             </li>
             <li>
-                <a href="/products">Products</a>
+                <a href="/products">Produits</a>
             </li>
             <li>
-                <a href="/about">About</a>
+                <a href="/about">Nous découvrir</a>
             </li>
         </ul>
 

@@ -21,7 +21,7 @@ import Button from './Button.vue'
     <div class="product-square px-4 py-16 flex">
         <div class="product-square_preview">
             <p class="hidden md:block">{{ product.id }}</p>
-            <p class="product-name hidden md:block">{{ product.name }}</p>
+            <p class="product-name hidden md:block">{{ product.name.substring(0, 9) + '...' }}</p>
         </div>
         <div class="product-square_content px-8 py-4">
             <div class="flex flex-col items-center md:items-start gap-4 h-[100%] justify-between">
