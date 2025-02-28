@@ -7,8 +7,7 @@ import Cart from './ui/Cart.vue';
     <nav class="flex justify-between items-center py-4 px-6 shadow-md rounded-2xl">
 
         <a href="/home" class="flex items-center">
-            <img alt="StratLab logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
-            StratLab
+            <img alt="Verdant logo" class="logo" src="@/assets/logo.png" width="120" height="50" />
         </a>
         
         

@@ -24,43 +24,52 @@ export type Product = {
 export type Products = Product[]
 
 const products: Products = [
-    {
-        id: 1,
-        name: 'Product 1',
-        price: 100,
-        description: 'One Piece - 25 Affiches Wanted Primes Mugiwara 100,5 x 70,5 cm',
-        image: './onepiece-affiche.webp',
-        class: 'product1',
-        slug: 'product-1'
-    },
-    {
-        id: 2,
-        name: 'Product 2',
-        price: 200,
-        description: 'Booster One piece, 12 cartes à collectionner, 1 carte rare garantie',
-        image: './one-piece-booster.png',
-        class: 'product2',
-        slug: 'product-2'
-    },
-    {
-        id: 3,
-        name: 'Product 3',
-        price: 300,
-        description: 'One Piece - Figurine Monkey D. Luffy Gear Fourth - King of Artist - 30 cm',
-        image: './one-piece-figurine.webp',
-        class: 'product3',
-        slug: 'product-3'
-    },
-    {
-        id: 4,
-        name: 'Product 4',
-        price: 300,
-        description: 'One Piece - Figurine Monkey D. Luffy Gear Fourth - King of Artist - 30 cm',
-        image: './one-piece-figurine.webp',
-        class: 'product4',
-        slug: 'product-4'
-    },
-]
+        {
+            id: 1,
+            name: 'Bouteille Isotherme en Acier Inoxydable',
+            price: 25,
+            description: 'Garde vos boissons chaudes ou froides pendant 12h.',
+            image: './bouteille-isotherme.jpg',
+            slug: 'bouteille-isotherme',
+            class: 'product'
+        },
+        {
+            id: 2,
+            name: 'Sac à vrac en coton bio',
+            price: 10,
+            description: 'Idéal pour les courses zéro déchet.',
+            image: './sac-vrac.jpg',
+            slug: 'sac-vrac',
+            class: 'product'
+        },
+        {
+            id: 3,
+            name: 'Brosse à dents en bambou',
+            price: 5,
+            description: 'Alternative écologique aux brosses en plastique.',
+            image: './brosse-bambou.jpg',
+            slug: 'brosse-bambou',
+            class: 'product'
+        },
+        {
+            id: 4,
+            name: 'Savon solide naturel',
+            price: 8,
+            description: 'Fait à la main avec des ingrédients bio.',
+            image: './savon-naturel.jpg',
+            slug: 'savon-naturel',
+            class: 'product'
+        },
+        {
+            id: 5,
+            name: 'Lampe solaire portable',
+            price: 35,
+            description: 'Rechargeable et idéale pour le camping ou la maison.',
+            image: './lampe-solaire.jpg',
+            slug: 'lampe-solaire',
+            class: 'product'
+        }
+    ]
 
 app.provide('products', products)
 

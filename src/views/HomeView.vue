@@ -7,9 +7,9 @@ import Header from '../components/Header.vue'
 
 <template>
   <main>
-        <section class="wrapper py-12">
-      <Header msg="The marketing toolkit" />
-    </section>
+      <section class="wrapper py-12">
+        <Header msg="Verdant - Des produits Écologiques" />
+      </section>
 
     <section class="pt-12">
       <ReviewList/>
