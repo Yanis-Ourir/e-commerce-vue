@@ -6,12 +6,11 @@
     <footer class="bg-[#084c3c] text-white md:flex justify-around items-center p-12 text-center md:text-start">
         <div>
             <p class="md:w-1/2">
-                We make onboarding easy for you. On day one, you will have access to all the tools you need to succeed.
-                And if you need help, our support team is available 24/7.
+                <span class="font-bold">Verdant</span> est une plateforme de vente en ligne qui vous propose une large gamme de produits de qualité à des prix très compétitifs.
             </p>
 
             <div class="flex gap-4 py-6 items-center justify-center md:justify-start">
-                <p>Follow us on:</p>
+                <p>Suivez nous sur :</p>
                  <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
                     <span class="sr-only">GitHub</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -46,42 +45,18 @@
                         <div>
                                 <ul class="mt-4">
                                     <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Marketing </a>
+                                        <a href="/" class="text-base text-gray-500 hover:text-gray-900"> Accueil </a>
                                     </li>
                                     <li class="mt-4">
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Analytics </a>
+                                        <a href="/products" class="text-base text-gray-500 hover:text-gray-900"> Produits </a>
                                     </li>
                                     <li class="mt-4">
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Commerce </a>
+                                        <a href="/about" class="text-base text-gray-500 hover:text-gray-900"> Nous découvrir </a>
                                     </li>
-                                    <li class="mt-4">
-                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Insights </a>
-                            </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-        
-            <div class="md:mt-12 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
-                <div class="md:grid md:grid-cols-1 md:gap-8">
-                    <div>
-                        <ul class="mt-4">
-                            <li>
-                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Marketing </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Analytics </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Commerce </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Insights </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </footer>
 </template>
