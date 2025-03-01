@@ -57,7 +57,7 @@ const store = useCartStore();
   </div>
   <div v-else class="p-4 min-h-screen flex flex-col items-center">
     <div class="bg-white rounded-2xl shadow-lg p-6 max-w-2xl w-full">
-      <img :src="'../public/' + product.image" :alt="product.name" class="w-full h-60 object-cover rounded-xl" />
+      <img :src="'/' + product.image" :alt="product.name" class="w-full h-60 object-cover rounded-xl" />
       <h1 class="text-2xl font-bold text-green-800 mt-4">{{ product.name }}</h1>
       <p class="text-gray-600 text-sm mt-2">{{ product.description }}</p>
       <span class="text-green-700 font-semibold text-xl mt-4 block">{{ product.price }}€</span>

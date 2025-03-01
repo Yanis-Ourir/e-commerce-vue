@@ -19,7 +19,7 @@ const store = useCartStore();
                 <h2 class="text-lg font-bold text-green-800">Récapitulatif</h2>
                 <div v-for="product in store.cart" :key="product.id" class="flex items-center justify-between border-b border-gray-200 py-4">
                     <div class="flex items-center">
-                    <img :src="'../public/' + product.image" :alt="product.name" class="w-16 h-16 object-cover rounded-xl" />
+                    <img :src="'/' + product.image" :alt="product.name" class="w-16 h-16 object-cover rounded-xl" />
                         <div class="ml-4">
                             <h2 class="text-lg font-semibold text-green-800">{{ product.name }}</h2>
                             <span class="text-gray-600 block">{{ product.price }}€</span>
