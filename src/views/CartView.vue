@@ -1,7 +1,15 @@
 <script setup lang="ts">
+import type { Product } from '@/main';
 import { useCartStore } from '@/stores/cart';
+import { ref } from 'vue';
+
+
 
 const store = useCartStore();
+
+
+
+
 </script>
 
 
@@ -22,17 +30,17 @@ const store = useCartStore();
                     <img :src="'/' + product.image" :alt="product.name" class="w-16 h-16 object-cover rounded-xl" />
                         <div class="ml-4">
                             <h2 class="text-lg font-semibold text-green-800">{{ product.name }}</h2>
-                            <span class="text-gray-600 block">{{ product.price }}€</span>
+                            <span class="text-gray-600 block">{{ product.price * product.quantity }}€</span>
                         </div>
                     </div>
                     <div class="flex items-center">
-                    <button class="text-gray-500  hover:text-green-500 transition">
+                    <button class="text-gray-500  hover:text-green-500 transition" @click="store.addProduct(product)">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                         </svg>
                     </button>
                     <span class="text-gray-
-                    600 mx-4">1</span>
+                    600 mx-4">{{ product.quantity }}</span>
                     <button class="text-gray-500 hover:text-red-500 transition" @click="store.removeProduct(product)">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
@@ -44,7 +52,7 @@ const store = useCartStore();
             <div class="mt-6">
                 <div class="flex justify-between mt-4">
                     <span class="text-gray-600">Total</span>
-                    <span class="text-green-800 font-semibold">{{ store.cart.reduce((total, product) => total + product.price, 0) }}€</span>
+                    <span class="text-green-800 font-semibold">{{ store.cart.reduce((total, product, quantity) => total + product.price * product.quantity, 0) }}€</span>
                     </div>
                     <button class="bg-green-500 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition mt-4 w-full">
                     Commander
